@@ -15,7 +15,7 @@ Each folder included within this repository has the following structure:
 
 All the animations are generated using `VDI <https://nci.org.au>`_ and data located in gdata.
 
-To modify any of these animations, make sure you install the first Blender in VDI:
+To modify any of these animations, make sure you install Blender in VDI:
 
 1. Within VDI download Blender by navigating within a browser to https://www.blender.org/download/, optionally you can run the following command in the terminal:
 
@@ -75,13 +75,13 @@ Optionally, you can compile Blender from scratch, see information at the `Blende
     user@vdi-nXX blender-2.93.1-linux-x64]$ ls
 
     2.93 blender-softwaregl blender-thumbnailer.py license
-    blender blender.svg copyright.txt readme.html
+    **blender** blender.svg copyright.txt readme.html
     blender.desktop blender-symbolic.svg lib
 
     user@vdi-nXX blender-2.93.1-linux-x64]$ ./blender
 
 
-It's recommended to create an alias within your ``.bash_profile``, and an env variable containing the path to the blender
+It's recommended to create an alias within your ``.bash_profile``, and an env variable containing the path to the ``blender`` executable:
 
 .. code-block:: bash
 
