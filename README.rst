@@ -86,7 +86,8 @@ It's recommended to create an alias within your ``.bash_profile``, and an env va
 .. code-block:: bash
 
     echo "alias blender='$(pwd)/blender'" >> ~/.bash_profile
-    BLENDER_PATH=$(pwd)
+    echo "BLENDER_PATH=$(pwd)" >> ~/.bash_profile
+    source ~/.bash_profile
 
 BlenderNC
 =========
