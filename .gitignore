@@ -1,6 +1,9 @@
 # Blender files
 *.blend1
 
+# VScode
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
