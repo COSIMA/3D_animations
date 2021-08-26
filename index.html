@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to COSIMA &amp; BlenderNC’s documentation! &#8212; COSIMA &amp; BlenderNC 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-cosima-blendernc-s-documentation">
+<h1>Welcome to COSIMA &amp; BlenderNC’s documentation!<a class="headerlink" href="#welcome-to-cosima-blendernc-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="d-animations">
+<h2>3D animations<a class="headerlink" href="#d-animations" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/COSIMA/3D_animations/actions/workflows/sphinx.yml"><img alt="Documentation Status" src="https://github.com/COSIMA/3D_animations/actions/workflows/sphinx.yml/badge.svg" /></a></p>
+<p>This repository contains examples of 3D animations generated using <a class="reference external" href="https://www.blender.org">blender</a> and <a class="reference external" href="https://github.com/blendernc/blendernc">BlenderNC</a>.</p>
+<p>Each folder included within this repository has the following structure:</p>
+<ul class="simple">
+<li><p>Example Name</p>
+<ul>
+<li><p>example_blender_file.blend</p></li>
+<li><p>example_animation.mp4</p></li>
+<li><p>example_animation.mov</p></li>
+<li><p>example_readme.rst</p></li>
+</ul>
+</li>
+</ul>
+<p>All the animations are generated using <a class="reference external" href="https://nci.org.au">VDI</a> and data located in gdata.</p>
+<p>To modify any of these animations, make sure you install Blender in VDI:</p>
+<ol class="arabic simple">
+<li><p>Within VDI download Blender by navigating within a browser to <a class="reference external" href="https://www.blender.org/download/">https://www.blender.org/download/</a>, optionally you can run the following command in the terminal:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://ftp.nluug.nl/pub/graphics/blender/release/Blender2.93/blender-2.93.1-linux-x64.tar.xz
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Decompress file:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar -xf blender-2.93.1-linux-x64.tar.xz
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure you have space within VDI, otherwise, you can install blender in gdata.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Navigate to the decompressed folder:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> blender-2.93.1-linux-x64/
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Now you can run Blender by simply executing within the terminal or double click the <code class="docutils literal notranslate"><span class="pre">blender</span></code> executable.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ls
+
+<span class="m">2</span>.93 blender-softwaregl blender-thumbnailer.py license
+blender blender.svg copyright.txt readme.html
+blender.desktop blender-symbolic.svg lib
+
+user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ./blender
+</pre></div>
+</div>
+<p>Optionally, you can compile Blender from scratch, see information at the <a class="reference external" href="https://wiki.blender.org/wiki/Building_Blender/Linux/Ubuntu">Blender Wiki</a>:</p>
+<ol class="arabic simple">
+<li><p>Download source code:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir ~/blender-git
+<span class="nb">cd</span> ~/blender-git
+git clone https://git.blender.org/blender.git
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Update and Build</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/blender-git/blender
+make update
+make
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Similar, now you can run Blender by simply executing within the terminal or double click the <code class="docutils literal notranslate"><span class="pre">blender</span></code> executable.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ls
+
+<span class="m">2</span>.93 blender-softwaregl blender-thumbnailer.py license
+**blender** blender.svg copyright.txt readme.html
+blender.desktop blender-symbolic.svg lib
+
+user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ./blender
+</pre></div>
+</div>
+<p>It’s recommended to create an alias within your <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code>, and an env variable containing the path to the <code class="docutils literal notranslate"><span class="pre">blender</span></code> executable:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;alias blender=&#39;</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">/blender&#39;&quot;</span> &gt;&gt; ~/.bash_profile
+<span class="nb">echo</span> <span class="s2">&quot;BLENDER_PATH=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">&quot;</span> &gt;&gt; ~/.bash_profile
+<span class="nb">source</span> ~/.bash_profile
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h1>BlenderNC<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Before using Blender to create animations, we will install BlenderNC. More information about the installation can be found at <a class="reference external" href="https://blendernc.readthedocs.io/en/latest/install.html">BlenderNC ReadTheDocs</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>BlenderNC is supported by versions of Blender &gt; 2.80</p>
+</div>
+<ol class="arabic simple">
+<li><p>Clone BlenderNC:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/blendernc/blendernc.git
+<span class="nb">cd</span> blendernc
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Install required packages within the Blender python distribution:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>on/bin/pythonX.Xm -m pip install -r requirements.txt
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Clone the <code class="docutils literal notranslate"><span class="pre">zip</span></code> installable, <strong>do not unzip the file</strong>.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/blendernc/blendernc-zip-install/raw/master/blendernc.zip
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>In Blender go to the user preferences and open the Addons tab.</p></li>
+<li><p>Once there, click Install add-on from file (bottom right corner)</p></li>
+<li><p>Navigate to the downloaded zip, select it, and click in install.</p></li>
+</ol>
+<p>7. Finally, check the box next to the BlenderNC addon, to enable it
+.. init_info..</p>
+<div class="toctree-wrapper compound">
+</div>
+<p>add_contents</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">COSIMA & BlenderNC</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Josue Martinez Moreno.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
