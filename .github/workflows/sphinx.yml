@@ -2,7 +2,7 @@ name: "Create Docs"
 on:
   push:
     branches:    
-      - master
+      - main
 
 jobs:
   docs:

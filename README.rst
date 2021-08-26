@@ -1,6 +1,10 @@
 =============
 3D animations
 =============
+|Documentation Status| 
+
+.. |Documentation Status| image:: https://github.com/COSIMA/3D_animations/actions/workflows/sphinx.yml/badge.svg
+   :target: https://github.com/COSIMA/3D_animations/actions/workflows/sphinx.yml
 
 This repository contains examples of 3D animations generated using `blender <https://www.blender.org>`_ and `BlenderNC <https://github.com/blendernc/blendernc>`_. 
 
