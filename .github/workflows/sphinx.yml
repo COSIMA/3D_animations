@@ -8,8 +8,8 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - name: Push changes
-      uses: actions/checkout@v1
+    - uses: actions/checkout@v1
+    - name: Construct website
       run: |
         cd webfront
         bash build_website.sh
