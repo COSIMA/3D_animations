@@ -17,6 +17,7 @@ for directory in ../*/; do
     if [ $renamed_file != 'webfront' ]
     then
         cp "$directory"*.rst ./content/
+        cp "$directory"*.png ./content/
         # Files in folder for docs
         ls_files=$(ls "$directory"*.rst)
         rst_f=()
