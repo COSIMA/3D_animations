@@ -22,6 +22,8 @@ jobs:
     - name: Commit documentation changes
       run: |
         ls
+        cd webfront
+        ls
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
