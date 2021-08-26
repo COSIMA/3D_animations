@@ -13,8 +13,7 @@ jobs:
       run: |
         cd webfront
         bash build_website.sh
-    - name: Create docs
-      uses: ammaraskar/sphinx-action@master
+    - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "./"
     # Publish built docs to gh-pages branch.
