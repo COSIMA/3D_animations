@@ -1,4 +1,6 @@
 _build
+index.rst
+content/
 
 # Blender files
 *.blend1

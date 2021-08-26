@@ -128,3 +128,4 @@ Before using Blender to create animations, we will install BlenderNC. More infor
 6. Navigate to the downloaded zip, select it, and click in install.
 
 7. Finally, check the box next to the BlenderNC addon, to enable it
+

@@ -8,11 +8,7 @@ Welcome to COSIMA & BlenderNC's documentation!
 
 .. init_info..
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
-
-add_contents
+.. add_contents..
 
 

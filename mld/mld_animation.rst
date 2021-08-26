@@ -23,6 +23,9 @@ the variable:
     The path contains the wildcard `*`  which allows the load of all the files contained in the repositories `output2*` and the netCDF files named `ocean-2d-mld-1-daily-mean-ym_20*.nc`
 
 
+.. figure:: mld_animation.png
+    :scale: 50 %
+    :alt: map to buried treasure
 
 
-    
+Donwload Blender file by `clicking here<https://github.com/COSIMA/3D_animations/raw/main/mld/access_mld.blend>`_
