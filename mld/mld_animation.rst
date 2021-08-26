@@ -24,7 +24,6 @@ the variable:
 
 
 .. figure:: mld_test.png
-    :scale: 50 %
     :alt: Mixed Layer Depth.
 
 
