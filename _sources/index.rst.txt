@@ -136,13 +136,31 @@ Before using Blender to create animations, we will install BlenderNC. More infor
 6. Navigate to the downloaded zip, select it, and click in install.
 
 7. Finally, check the box next to the BlenderNC addon, to enable it
+
 .. init_info..
 
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+	:maxdepth: 2
+	:caption: SSS Animation
+
+	./content/salinity_animation.rst
 
 
-add_contents
+.. toctree::
+	:maxdepth: 2
+	:caption: SST Animation
+
+	./content/temperature_animation.rst
+
+
+.. toctree::
+	:maxdepth: 2
+	:caption: Mld Animation
+
+	./content/mld_animation.rst
+
+
+.. add_contents..
 
 
