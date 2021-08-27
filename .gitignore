@@ -1,6 +1,7 @@
 _build
 index.rst
 content/
+.DS_Store
 
 # Blender files
 *.blend1
