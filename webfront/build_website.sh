@@ -48,12 +48,10 @@ create_toctree () {
         str+=$(toctree_str "${files[@]}")
     done
     echo $str'\n\n'
-    # echo -e $'$str_tmp'
 }
 
 toctree_str () {
     # Generate string for the files and folder name.
-    # str_capital="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
     str=''
     for file in "${@:1}"; do
         str+="\n\t./content/$file"

@@ -30,13 +30,16 @@ The animation consists of the Mixed Layer Depth (MLD) displayed in a sphere with
     :alt: Sea Surface Salinity.
 
 
+Download
+--------
+
 The provided animation can be found in `YouTube <>`_ or directly donwloaded by `clicking here <>`_
 
 .. raw:: html
 
     <br>
 
-.. note:: The provided animation has been edited to invert the colormap legends and replace the date format from a string to a clock-like calendar. 
+.. note:: The provided animation has been edited to replace the date format from a string to a clock-like calendar. 
 
 Reproduce Animation
 -------------------
