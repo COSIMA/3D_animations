@@ -29,6 +29,9 @@ The animation consists of the Mixed Layer Depth (MLD) displayed in a sphere with
 .. figure:: mld_test.png
     :alt: Mixed Layer Depth.
 
+    
+Download
+--------
 
 The provided animation can be found in `YouTube <>`_ or directly donwloaded by `clicking here <>`_
 

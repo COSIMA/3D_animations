@@ -2,10 +2,10 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Month clock" href="time_compass.html" /><link rel="prev" title="Temperature animation" href="temperature_animation.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Salinity animation" href="salinity_animation.html" /><link rel="prev" title="Welcome to COSIMA &amp; BlenderNC’s documentation!" href="../index.html" />
 
     <meta name="generator" content="sphinx-4.1.2, furo 2021.08.17.beta43"/>
-        <title>MLD animation - COSIMA &amp; BlenderNC 0.0.1 documentation</title>
+        <title>Install Blender in VDI - COSIMA &amp; BlenderNC 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
@@ -152,15 +152,15 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Install Blender &amp; BlenderNC</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install_blendernc.html">Install Blender in VDI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install_blendernc.html#install-blendernc">Install BlenderNC</a></li>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Install Blender in VDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#install-blendernc">Install BlenderNC</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Animations</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="salinity_animation.html">Salinity animation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="temperature_animation.html">Temperature animation</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">MLD animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mld_animation.html">MLD animation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Extra - Editing</span></p>
 <ul>
@@ -191,76 +191,134 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <div class="section" id="mld-animation">
-<h1>MLD animation<a class="headerlink" href="#mld-animation" title="Permalink to this headline">¶</a></h1>
-<dl class="simple">
-<dt>This animation corresponds to a set of 3 simple animations:</dt><dd><ul class="simple">
-<li><p><strong>Mixed Layer Depth</strong></p></li>
-<li><p>Sea Surface Temperature</p></li>
-<li><p>Sea Surface Salinity</p></li>
-</ul>
-</dd>
-</dl>
-<p>from the ACCESS-OM2 ocean model. These animations load only one individual variable. For this animation, the files loaded corresponds to:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/g/data/cj50/access-om2/raw-output/access-om2-01/01deg_jra55v140_iaf/output2*/ocean/ocean-2d-mld-1-daily-mean-ym_20*.nc
-</pre></div>
-</div>
-<p>the variable:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mld
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The path contains the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code>  which allows the load of all the files contained in the repositories <code class="docutils literal notranslate"><span class="pre">output2*</span></code> and the netCDF files named <code class="docutils literal notranslate"><span class="pre">ocean-2d-mld-1-daily-mean-ym_20*.nc`</span></code></p>
-</div>
-<p>The animation consists of the Mixed Layer Depth (MLD) displayed in a sphere with the continents displaced to their given elevation and the texture displayed over the continents corresponds to the <a class="reference external" href="https://www.naturalearthdata.com/">natural earth</a> dataset. See below a snapshot of the raw animation:</p>
-<div class="figure align-default">
-<img alt="Mixed Layer Depth." src="../_images/mld_test.png"/>
-</div>
-<div class="section" id="download">
-<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
-<p>The provided animation can be found in <a href="#id1"><span class="problematic" id="id2">`YouTube &lt;&gt;`_</span></a> or directly donwloaded by <a href="#id3"><span class="problematic" id="id4">`clicking here &lt;&gt;`_</span></a></p>
-<br/><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The provided animation has been edited to invert the colormap legends and replace the date format from a string to a clock-like calendar.</p>
-</div>
-</div>
-<div class="section" id="reproduce-animation">
-<h2>Reproduce Animation<a class="headerlink" href="#reproduce-animation" title="Permalink to this headline">¶</a></h2>
-<p>To reproduce the animation, make sure to install <code class="docutils literal notranslate"><span class="pre">Blender</span></code> and  <code class="docutils literal notranslate"><span class="pre">BlenderNC</span></code> by following the instructions at <a class="reference internal" href="install_blendernc.html#installation"><span class="std std-ref">Install Blender in VDI</span></a>, and download this animation <code class="docutils literal notranslate"><span class="pre">access_mld.blend</span></code> file by <a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/mld/access_mld.blend">clicking here</a>.</p>
-<p>After downloading the blender file and opening it in VDI or your rendering computer of preference, make sure to reconnect the BlenderNC nodes by following the instruction below:</p>
+        <div class="section" id="install-blender-in-vdi">
+<span id="installation"></span><h1>Install Blender in VDI<a class="headerlink" href="#install-blender-in-vdi" title="Permalink to this headline">¶</a></h1>
+<p>To modify any of these animations, make sure you install Blender in VDI:</p>
 <ol class="arabic simple">
-<li><p>Navegate to the BlenderNC nodetree:</p></li>
-<li><p>Disconnect the output of the input node to update the nodetree:</p></li>
-<li><p>Select the <code class="docutils literal notranslate"><span class="pre">mld</span></code> variable:</p></li>
-<li><p>Connect all the nodes in order:</p></li>
-<li><p>Render image:</p></li>
+<li><p>Within VDI download Blender by navigating within a browser to <a class="reference external" href="https://www.blender.org/download/">https://www.blender.org/download/</a>, optionally you can run the following command in the terminal:</p></li>
 </ol>
-<p>Now you can modify anything in the animation, from the lighting, the material, colorbar, to the dataset used for the animation.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://ftp.nluug.nl/pub/graphics/blender/release/Blender2.93/blender-2.93.1-linux-x64.tar.xz
+</pre></div>
 </div>
+<ol class="arabic simple" start="2">
+<li><p>Decompress file:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar -xf blender-2.93.1-linux-x64.tar.xz
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure you have space within VDI, otherwise, you can install blender in gdata.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Navigate to the decompressed folder:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> blender-2.93.1-linux-x64/
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Now you can run Blender by simply executing within the terminal or double click the <code class="docutils literal notranslate"><span class="pre">blender</span></code> executable.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ls
+
+<span class="m">2</span>.93 blender-softwaregl blender-thumbnailer.py license
+blender blender.svg copyright.txt readme.html
+blender.desktop blender-symbolic.svg lib
+
+user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ./blender
+</pre></div>
+</div>
+<p>Optionally, you can compile Blender from scratch, see information at the <a class="reference external" href="https://wiki.blender.org/wiki/Building_Blender/Linux/Ubuntu">Blender Wiki</a>:</p>
+<ol class="arabic simple">
+<li><p>Download source code:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir ~/blender-git
+<span class="nb">cd</span> ~/blender-git
+git clone https://git.blender.org/blender.git
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Update and Build</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/blender-git/blender
+make update
+make
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Similar, now you can run Blender by simply executing within the terminal or double click the <code class="docutils literal notranslate"><span class="pre">blender</span></code> executable.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ls
+
+<span class="m">2</span>.93 blender-softwaregl blender-thumbnailer.py license
+**blender** blender.svg copyright.txt readme.html
+blender.desktop blender-symbolic.svg lib
+
+user@vdi-nXX blender-2.93.1-linux-x64<span class="o">]</span>$ ./blender
+</pre></div>
+</div>
+<p>It’s recommended to create an alias within your <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code>, and an env variable containing the path to the <code class="docutils literal notranslate"><span class="pre">blender</span></code> executable:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">"alias blender='</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">/blender'"</span> &gt;&gt; ~/.bash_profile
+<span class="nb">echo</span> <span class="s2">"BLENDER_PATH=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">"</span> &gt;&gt; ~/.bash_profile
+<span class="nb">source</span> ~/.bash_profile
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-blendernc">
+<h1>Install BlenderNC<a class="headerlink" href="#install-blendernc" title="Permalink to this headline">¶</a></h1>
+<p>Before using Blender to create animations, we will install BlenderNC. More information about the installation can be found at <a class="reference external" href="https://blendernc.readthedocs.io/en/latest/install.html">BlenderNC ReadTheDocs</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>BlenderNC is supported by versions of Blender &gt; 2.80</p>
+</div>
+<ol class="arabic simple">
+<li><p>Clone BlenderNC:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/blendernc/blendernc.git
+<span class="nb">cd</span> blendernc
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Install required packages within the Blender python distribution:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>on/bin/pythonX.Xm -m pip install -r requirements.txt
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Clone the <code class="docutils literal notranslate"><span class="pre">zip</span></code> installable, <strong>do not unzip the file</strong>.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/blendernc/blendernc-zip-install/raw/master/blendernc.zip
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>In Blender go to the user preferences and open the Addons tab.</p></li>
+<li><p>Once there, click Install add-on from file (bottom right corner)</p></li>
+<li><p>Navigate to the downloaded zip, select it, and click in install.</p></li>
+<li><p>Finally, check the box next to the BlenderNC addon, to enable it</p></li>
+</ol>
 </div>
 
       </article>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="time_compass.html">
+          <a class="next-page" href="salinity_animation.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Month clock</div>
+                <div class="title">Salinity animation</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="temperature_animation.html">
+          <a class="prev-page" href="../index.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Temperature animation</div>
+                <div class="title">Home</div>
                 
               </div>
             </a>
@@ -274,7 +332,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../_sources/content/mld_animation.rst.txt"
+            <a class="muted-link" href="../_sources/content/install_blendernc.rst.txt"
                rel="nofollow">
               Show Source
             </a>
@@ -294,11 +352,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">MLD animation</a><ul>
-<li><a class="reference internal" href="#download">Download</a></li>
-<li><a class="reference internal" href="#reproduce-animation">Reproduce Animation</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Install Blender in VDI</a></li>
+<li><a class="reference internal" href="#install-blendernc">Install BlenderNC</a></li>
 </ul>
 
           </div>

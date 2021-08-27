@@ -33,34 +33,31 @@ All the animations can be found in YouTube in a link contained in each ``example
 
 
 .. toctree::
-	:maxdepth: 2
-	:caption: Install Blender & BlenderNC
+   :maxdepth: 2
+   :caption: Install Blender & BlenderNC
 
-	./install_blendernc.rst
+   ./content/install_blendernc.rst
+
 
 
 .. toctree::
-	:maxdepth: 2
-	:caption: SSS Animation
+	:maxdepth: 1
+	:caption: Animations
 
 	./content/salinity_animation.rst
-
-
-.. toctree::
-	:maxdepth: 2
-	:caption: SST Animation
-
 	./content/temperature_animation.rst
-
-
-.. toctree::
-	:maxdepth: 2
-	:caption: Mld Animation
-
 	./content/mld_animation.rst
 
 
 .. add_contents..
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Extra - Editing 
+
+   ./content/time_compass.rst
+   ./content/post-rendering.rst
 
 
 =============
