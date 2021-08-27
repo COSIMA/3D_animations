@@ -131,7 +131,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -151,7 +151,11 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">SSS Animation</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Install Blender &amp; BlenderNC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install_blendernc.html">Install Blender in VDI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SSS Animation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="salinity_animation.html">Salinity animation</a></li>
 </ul>
@@ -182,13 +186,55 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <div class="section" id="temperature-animation">
 <h1>Temperature animation<a class="headerlink" href="#temperature-animation" title="Permalink to this headline">¶</a></h1>
+<dl class="simple">
+<dt>This animation corresponds to a set of 3 simple animations:</dt><dd><ul class="simple">
+<li><p>Mixed Layer Depth</p></li>
+<li><p><strong>Sea Surface Temperature</strong></p></li>
+<li><p>Sea Surface Salinity</p></li>
+</ul>
+</dd>
+</dl>
+<p>from the ACCESS-OM2 ocean model. These animations load only one individual variable. For this animation, the files loaded corresponds to:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/g/data/cj50/access-om2/raw-output/access-om2-01/01deg_jra55v140_iaf/output2*/ocean/ocean-2d-surface_temp-1-daily-mean-ym_20*.nc
+</pre></div>
+</div>
+<p>the variable:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>surface_temp
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The path contains the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code>  which allows the load of all the files contained in the repositories <code class="docutils literal notranslate"><span class="pre">output2*</span></code> and the netCDF files named <code class="docutils literal notranslate"><span class="pre">ocean-2d-surface_temp-1-daily-mean-ym_20*.nc`</span></code></p>
+</div>
+<p>The animation consists of the Mixed Layer Depth (MLD) displayed in a sphere with the continents displaced to their given elevation and the texture displayed over the continents corresponds to the <a class="reference external" href="https://www.naturalearthdata.com/">natural earth</a> dataset. See below a snapshot of the raw animation:</p>
+<div class="figure align-default">
+<img alt="Sea Surface Salinity." src="../_images/temperature_test.png"/>
+</div>
+<p>The provided animation can be found in <a href="#id1"><span class="problematic" id="id2">`YouTube &lt;&gt;`_</span></a> or directly donwloaded by <a href="#id3"><span class="problematic" id="id4">`clicking here &lt;&gt;`_</span></a></p>
+<br/><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The provided animation has been edited to invert the colormap legends and replace the date format from a string to a clock-like calendar.</p>
+</div>
+<div class="section" id="reproduce-animation">
+<h2>Reproduce Animation<a class="headerlink" href="#reproduce-animation" title="Permalink to this headline">¶</a></h2>
+<p>To reproduce the animation, make sure to install <code class="docutils literal notranslate"><span class="pre">Blender</span></code> and  <code class="docutils literal notranslate"><span class="pre">BlenderNC</span></code> by following the instructions at <a class="reference internal" href="../install_blendernc.html#installation"><span class="std std-ref">Install Blender in VDI</span></a>, and download this animation <code class="docutils literal notranslate"><span class="pre">access_mld.blend</span></code> file by <a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/salinty/access_salinity.blend">clicking here</a>.</p>
+<p>After downloading the blender file and opening it in VDI or your rendering computer of preference, make sure to reconnect the BlenderNC nodes by following the instruction below:</p>
+<ol class="arabic simple">
+<li><p>Navegate to the BlenderNC nodetree:</p></li>
+<li><p>Disconnect the output of the input node to update the nodetree:</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">surface_temp</span></code> variable:</p></li>
+<li><p>Connect all the nodes in order:</p></li>
+<li><p>Render image:</p></li>
+</ol>
+<p>Now you can modify anything in the animation, from the lighting, the material, colorbar, to the dataset used for the animation.</p>
+</div>
 </div>
 
       </article>
@@ -233,8 +279,27 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Temperature animation</a><ul>
+<li><a class="reference internal" href="#reproduce-animation">Reproduce Animation</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
