@@ -12,13 +12,22 @@ Welcome to COSIMA & BlenderNC's documentation!
 
 
 .. toctree::
-	:maxdepth: 2
-	:caption: Install Blender & BlenderNC
+   :maxdepth: 2
+   :caption: Install Blender & BlenderNC
 
-	./install_blendernc.rst
+   ./content/install_blendernc.rst
+
 
 
 .. add_contents..
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Extra - Editing 
+
+   ./content/time_compass.rst
+   ./content/post-rendering.rst
 
 
 =============
