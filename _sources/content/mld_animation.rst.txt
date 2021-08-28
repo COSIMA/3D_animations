@@ -33,11 +33,12 @@ The animation consists of the Mixed Layer Depth (MLD) displayed in a sphere with
 Download
 --------
 
-The provided animation can be found in `YouTube <>`_ or directly donwloaded by `clicking here <>`_
+The provided animation can be found in `YouTube <https://youtu.be/9vPr_PlYhvg>`_ or directly donwload the mov file (`clicking here <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_) or mp4 file (`clicking here <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_).
 
 .. raw:: html
 
-    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9vPr_PlYhvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
 
 .. note:: The provided animation has been edited to invert the colormap legends and replace the date format from a string to a clock-like calendar. 
 
