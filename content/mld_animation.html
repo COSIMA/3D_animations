@@ -211,15 +211,15 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The path contains the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code>  which allows the load of all the files contained in the repositories <code class="docutils literal notranslate"><span class="pre">output2*</span></code> and the netCDF files named <code class="docutils literal notranslate"><span class="pre">ocean-2d-mld-1-daily-mean-ym_20*.nc`</span></code></p>
+<p>The path contains the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code>  which allows the load of all the files contained in the directories <code class="docutils literal notranslate"><span class="pre">output2*</span></code> and the netCDF files named <code class="docutils literal notranslate"><span class="pre">ocean-2d-mld-1-daily-mean-ym_20*.nc`</span></code></p>
 </div>
-<p>The animation consists of the Mixed Layer Depth (MLD) displayed in a sphere with the continents displaced to their given elevation and the texture displayed over the continents corresponds to the <a class="reference external" href="https://www.naturalearthdata.com/">natural earth</a> dataset. See below a snapshot of the raw animation:</p>
+<p>The animation shows the mixed layer depth (MLD) on the sphere. The continents are displaced to their given elevation and the texture displayed over the continents corresponds to the <a class="reference external" href="https://www.naturalearthdata.com/">natural earth</a> dataset. A snapshot of the animation looks like:</p>
 <div class="figure align-default">
 <img alt="Mixed Layer Depth." src="../_images/mld_test.png"/>
 </div>
 <div class="section" id="download">
 <h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
-<p>The provided animation can be found in <a class="reference external" href="https://youtu.be/9vPr_PlYhvg">YouTube</a> or directly donwload the mov file (<a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4">clicking here</a>) or mp4 file (<a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4">clicking here</a>).</p>
+<p>The provided animation can be found in <a class="reference external" href="https://youtu.be/9vPr_PlYhvg">YouTube</a>. Otherwise, you can directly donwload the <a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4">mov file</a> or the (<a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4">mp4 file</a>).</p>
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/9vPr_PlYhvg" title="YouTube video player" width="560"></iframe><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The provided animation has been edited to invert the colormap legends and replace the date format from a string to a clock-like calendar.</p>
@@ -230,13 +230,13 @@
 <p>To reproduce the animation, make sure to install <code class="docutils literal notranslate"><span class="pre">Blender</span></code> and  <code class="docutils literal notranslate"><span class="pre">BlenderNC</span></code> by following the instructions at <a class="reference internal" href="install_blendernc.html#installation"><span class="std std-ref">Install Blender in VDI</span></a>, and download this animation <code class="docutils literal notranslate"><span class="pre">access_mld.blend</span></code> file by <a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/mld/access_mld.blend">clicking here</a>.</p>
 <p>After downloading the blender file and opening it in VDI or your rendering computer of preference, make sure to reconnect the BlenderNC nodes by following the instruction below:</p>
 <ol class="arabic simple">
-<li><p>Navegate to the BlenderNC nodetree:</p></li>
+<li><p>Navigate to the BlenderNC nodetree:</p></li>
 <li><p>Disconnect the output of the input node to update the nodetree:</p></li>
 <li><p>Select the <code class="docutils literal notranslate"><span class="pre">mld</span></code> variable:</p></li>
 <li><p>Connect all the nodes in order:</p></li>
 <li><p>Render image:</p></li>
 </ol>
-<p>Now you can modify anything in the animation, from the lighting, the material, colorbar, to the dataset used for the animation.</p>
+<p>Now you can modify the animation: anything from the lighting, the material, colorbar, to the dataset used for the animation.</p>
 </div>
 </div>
 
