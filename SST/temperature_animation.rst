@@ -1,4 +1,4 @@
-SST/temperature_animation.rst=================================
+=================================
 Sea-surface Temperature animation
 =================================
 
