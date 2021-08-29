@@ -2,10 +2,10 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="MLD animation" href="mld_animation.html" /><link rel="prev" title="Salinity animation" href="salinity_animation.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Mixed layer depth animation" href="mld_animation.html" /><link rel="prev" title="Sea-surface Salinity animation" href="salinity_animation.html" />
 
     <meta name="generator" content="sphinx-4.1.2, furo 2021.08.17.beta43"/>
-        <title>Temperature animation - COSIMA &amp; BlenderNC 0.0.1 documentation</title>
+        <title>Sea-surface Temperature animation - COSIMA &amp; BlenderNC 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
@@ -158,9 +158,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Animations</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="salinity_animation.html">Salinity animation</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Temperature animation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mld_animation.html">MLD animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="salinity_animation.html">Sea-surface Salinity animation</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Sea-surface Temperature animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mld_animation.html">Mixed layer depth animation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Extra - Editing</span></p>
 <ul>
@@ -191,21 +191,14 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <div class="section" id="temperature-animation">
-<h1>Temperature animation<a class="headerlink" href="#temperature-animation" title="Permalink to this headline">¶</a></h1>
-<dl class="simple">
-<dt>This animation corresponds to a set of 3 simple animations:</dt><dd><ul class="simple">
-<li><p>Mixed Layer Depth</p></li>
-<li><p><strong>Sea Surface Temperature</strong></p></li>
-<li><p>Sea Surface Salinity</p></li>
-</ul>
-</dd>
-</dl>
-<p>from the ACCESS-OM2 ocean model. These animations load only one individual variable. For this animation, the files loaded corresponds to:</p>
+        <div class="section" id="sea-surface-temperature-animation">
+<h1>Sea-surface Temperature animation<a class="headerlink" href="#sea-surface-temperature-animation" title="Permalink to this headline">¶</a></h1>
+<p>This example animates the sea-surface temperature (SST) from the ACCESS-OM2 global ocean-sea ice model.
+The files loaded for these animations are located at:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/g/data/cj50/access-om2/raw-output/access-om2-01/01deg_jra55v140_iaf/output2*/ocean/ocean-2d-surface_temp-1-daily-mean-ym_20*.nc
 </pre></div>
 </div>
-<p>the variable:</p>
+<p>and the variable name is:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>surface_temp
 </pre></div>
 </div>
@@ -213,7 +206,7 @@
 <p class="admonition-title">Note</p>
 <p>The path contains the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code>  which allows the load of all the files contained in the repositories <code class="docutils literal notranslate"><span class="pre">output2*</span></code> and the netCDF files named <code class="docutils literal notranslate"><span class="pre">ocean-2d-surface_temp-1-daily-mean-ym_20*.nc`</span></code></p>
 </div>
-<p>The animation consists of the Mixed Layer Depth (MLD) displayed in a sphere with the continents displaced to their given elevation and the texture displayed over the continents corresponds to the <a class="reference external" href="https://www.naturalearthdata.com/">natural earth</a> dataset. See below a snapshot of the raw animation:</p>
+<p>The animation consists of the sea-surface temperature on a sphere with the continents displaced to their given elevation and the texture displayed over the continents corresponds to the <a class="reference external" href="https://www.naturalearthdata.com/">natural earth</a> dataset. Here’s a snapshot of the animation:</p>
 <div class="figure align-default">
 <img alt="Sea Surface Salinity." src="../_images/temperature_test.png"/>
 </div>
@@ -227,10 +220,10 @@
 </div>
 <div class="section" id="reproduce-animation">
 <h2>Reproduce Animation<a class="headerlink" href="#reproduce-animation" title="Permalink to this headline">¶</a></h2>
-<p>To reproduce the animation, make sure to install <code class="docutils literal notranslate"><span class="pre">Blender</span></code> and  <code class="docutils literal notranslate"><span class="pre">BlenderNC</span></code> by following the instructions at <a class="reference internal" href="install_blendernc.html#installation"><span class="std std-ref">Install Blender in VDI</span></a>, and download this animation <code class="docutils literal notranslate"><span class="pre">access_mld.blend</span></code> file by <a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/salinty/access_salinity.blend">clicking here</a>.</p>
+<p>To reproduce the animation, make sure to install <code class="docutils literal notranslate"><span class="pre">Blender</span></code> and  <code class="docutils literal notranslate"><span class="pre">BlenderNC</span></code> by following the instructions at <a class="reference internal" href="install_blendernc.html#installation"><span class="std std-ref">Install Blender in VDI</span></a>, and download this animation <code class="docutils literal notranslate"><span class="pre">access_sst.blend</span></code> file by <a class="reference external" href="https://github.com/COSIMA/3D_animations/raw/main/salinty/access_salinity.blend">clicking here</a>.</p>
 <p>After downloading the blender file and opening it in VDI or your rendering computer of preference, make sure to reconnect the BlenderNC nodes by following the instruction below:</p>
 <ol class="arabic simple">
-<li><p>Navegate to the BlenderNC nodetree:</p></li>
+<li><p>Navigate to the BlenderNC nodetree:</p></li>
 <li><p>Disconnect the output of the input node to update the nodetree:</p></li>
 <li><p>Select the <code class="docutils literal notranslate"><span class="pre">surface_temp</span></code> variable:</p></li>
 <li><p>Connect all the nodes in order:</p></li>
@@ -249,7 +242,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">MLD animation</div>
+                <div class="title">Mixed layer depth animation</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -260,7 +253,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Salinity animation</div>
+                <div class="title">Sea-surface Salinity animation</div>
                 
               </div>
             </a>
@@ -294,7 +287,7 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Temperature animation</a><ul>
+<li><a class="reference internal" href="#">Sea-surface Temperature animation</a><ul>
 <li><a class="reference internal" href="#download">Download</a></li>
 <li><a class="reference internal" href="#reproduce-animation">Reproduce Animation</a></li>
 </ul>
