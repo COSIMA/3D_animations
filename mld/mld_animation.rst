@@ -1,19 +1,15 @@
-=============
-MLD animation
-=============
+===========================
+Mixed layer depth animation
+===========================
 
-This animation corresponds to a set of 3 simple animations:
- - **Mixed Layer Depth**
- - Sea Surface Temperature 
- - Sea Surface Salinity
-
-from the ACCESS-OM2 ocean model. These animations load only one individual variable. For this animation, the files loaded corresponds to:
+This example animates the mixed layer depth (MLD) from the ACCESS-OM2 global ocean-sea ice model. 
+The files loaded for these animations are located at:
 
 .. code-block:: bash
 
     /g/data/cj50/access-om2/raw-output/access-om2-01/01deg_jra55v140_iaf/output2*/ocean/ocean-2d-mld-1-daily-mean-ym_20*.nc
 
-the variable:
+and the variable name is:
 
 .. code-block:: bash
 
@@ -23,7 +19,7 @@ the variable:
     The path contains the wildcard ``*``  which allows the load of all the files contained in the directories ``output2*`` and the netCDF files named ``ocean-2d-mld-1-daily-mean-ym_20*.nc```
 
 
-The animation shows the mixed layer depth (MLD) on the sphere. The continents are displaced to their given elevation and the texture displayed over the continents corresponds to the `natural earth  <https://www.naturalearthdata.com/>`_ dataset. A snapshot of the animation looks like:
+The animation shows the mixed layer depth on the sphere. The continents are displaced to their given elevation and the texture displayed over the continents corresponds to the `natural earth  <https://www.naturalearthdata.com/>`_ dataset. A snapshot of the animation looks like:
 
 .. figure:: mld_test.png
     :alt: Mixed Layer Depth.
@@ -31,7 +27,7 @@ The animation shows the mixed layer depth (MLD) on the sphere. The continents ar
 Download
 --------
 
-The provided animation can be found in `YouTube <https://youtu.be/9vPr_PlYhvg>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_ or the (`mp4 file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_).
+The provided animation can be found in `YouTube <https://youtu.be/9vPr_PlYhvg>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_.
 
 .. raw:: html
 
