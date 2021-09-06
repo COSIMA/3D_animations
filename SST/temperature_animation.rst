@@ -22,24 +22,24 @@ and the variable name is:
 The animation consists of the sea-surface temperature on a sphere with the continents displaced to their given elevation and the texture displayed over the continents corresponds to the `natural earth  <https://www.naturalearthdata.com/>`_ dataset. Here's a snapshot of the animation: 
 
 .. figure:: temperature_test.png
-    :alt: Sea Surface Salinity.
+    :alt: Sea Surface Temperature.
 
 
 Download
 --------
 
-The provided animation can be found in `YouTube <>`_ or directly donwloaded by `clicking here <>`_
+The provided animation can be found in `YouTube <>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/SST/SST_final0001-2000.mov>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/SST/SST_final0001-2000.mp4>`_.
+
 
 .. raw:: html
-
-    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B9aUA_UhD9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 .. note:: The provided animation has been edited to replace the date format from a string to a clock-like calendar. 
 
 Reproduce Animation
 -------------------
 
-To reproduce the animation, make sure to install ``Blender`` and  ``BlenderNC`` by following the instructions at :ref:`installation`, and download this animation ``access_sst.blend`` file by `clicking here <https://github.com/COSIMA/3D_animations/raw/main/salinty/access_salinity.blend>`_.
+To reproduce the animation, make sure to install ``Blender`` and  ``BlenderNC`` by following the instructions at :ref:`installation`, and download this animation ``access_sst.blend`` file by `clicking here <https://github.com/COSIMA/3D_animations/raw/main/salinty/access_temperature.blend>`_.
 
 After downloading the blender file and opening it in VDI or your rendering computer of preference, make sure to reconnect the BlenderNC nodes by following the instruction below:
 
