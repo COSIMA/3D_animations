@@ -28,10 +28,11 @@ The animation consists of the sea-surface temperature on a sphere with the conti
 Download
 --------
 
-The provided animation can be found in `YouTube <>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/SST/SST_final0001-2000.mov>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/SST/SST_final0001-2000.mp4>`_.
+The provided animation can be found in `YouTube <https://youtu.be/B9aUA_UhD9Y>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/SST/SST_final0001-2000.mov>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/SST/SST_final0001-2000.mp4>`_.
 
 
 .. raw:: html
+    
     <iframe width="560" height="315" src="https://www.youtube.com/embed/B9aUA_UhD9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 .. note:: The provided animation has been edited to replace the date format from a string to a clock-like calendar. 

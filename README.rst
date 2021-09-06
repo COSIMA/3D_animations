@@ -1,12 +1,11 @@
 =============
 3D animations
 =============
-|Documentation Status|
+|Documentation Status| |Documentation|
 
 .. |Documentation Status| image:: https://github.com/COSIMA/3D_animations/actions/workflows/sphinx.yml/badge.svg
    :target: https://github.com/COSIMA/3D_animations/actions/workflows/sphinx.yml
 
-|Documentation|
 
 .. |Documentation| image:: https://img.shields.io/badge/documentation-in%20development-orange
    :target: https://cosima.github.io/3D_animations/
