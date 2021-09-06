@@ -27,7 +27,7 @@ The animation consists of the sea-surface salinity on a sphere with the continen
 Download
 --------
     
-The provided animation can be found in `YouTube <https://youtu.be/4mUfd7A_SDw>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/SSS/SSS_final0001-2000.mp4>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/SSS/SSS_final0001-2000.mp4>`_.
+The provided animation can be found in `YouTube <https://youtu.be/4mUfd7A_SDw>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/SSS/SSS_final0001-2000.mov>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/SSS/SSS_final0001-2000.mp4>`_.
 
 .. raw:: html
 

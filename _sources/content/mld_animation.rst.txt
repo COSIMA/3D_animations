@@ -27,7 +27,7 @@ The animation shows the mixed layer depth on the sphere. The continents are disp
 Download
 --------
 
-The provided animation can be found in `YouTube <https://youtu.be/9vPr_PlYhvg>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_.
+The provided animation can be found in `YouTube <https://youtu.be/9vPr_PlYhvg>`_. Otherwise, you can directly donwload the `mov file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mov>`_ or the `mp4 file <https://github.com/COSIMA/3D_animations/raw/main/mld/mld_final0001-2000.mp4>`_.
 
 .. raw:: html
 
